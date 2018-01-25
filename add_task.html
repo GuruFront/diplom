@@ -11,28 +11,24 @@
 <body>
 	<div class="main-bg">
 		<div class="container">
-			<div class="container_bg login">
+			<div class="container_bg">
 				<h1 class="login__title">
-					Welcome to Todo app
+					Add task
 				</h1>
-				<p class="login__title login__title_small">
-					Please enter your data and press “start” button
-				</p>
-				<div class="login__form">
-					<form action="">
-						<p class="login__inputTitle">
-							Your email: 
-						</p>
-						<input required type="email" placeholder="Please enter your email" class="login__input">
-						<p class="login__inputTitle">
-							Your password: 
-						</p>
-						<input required type="password" placeholder="Please enter your password" class="login__input">		
-						<div class="invalidData">Invalid input data</div>
-						<a href="dashboard.html" class="login__btn">START</a>
-					</form>
-				</div>
 
+				<div class="row">
+					<div class="col-md-3 offset-md-1">
+						<nav class="nav">
+							<img class="nav__photo" src="img/photo.jpg" alt="Photo not found">
+							<p class="nav__name">
+								{{user.name}}
+							</p>
+							<a href="#" class="nav__btn nav__btn_add">SETTINGS</a>
+							<a href="dashboard.html" class="nav__btn nav__btn_edit">DASHBOARD</a>
+							<a href="index.html" class="nav__btn nav__btn_exit">EXIT</a>
+						</nav>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
