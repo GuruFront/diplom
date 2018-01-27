@@ -72,6 +72,7 @@
   border-radius: 6px;
   cursor: pointer;
   color: #fff;
+  color: #fff;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -80,6 +81,9 @@
   .login__btn:hover {
     text-decoration: none;
     color: #fff; }
+  .login__btn_add {
+    margin-left: 0;
+    margin-top: 56px; }
 
 .invalidData {
   font-size: 14px;
@@ -115,6 +119,7 @@
     border-radius: 6px;
     cursor: pointer;
     color: #fff;
+    color: #fff;
     margin-top: 0px;
     margin-bottom: 14px; }
     .nav__btn:hover {
@@ -125,7 +130,7 @@
     .nav__btn_edit {
       background-color: #276fa7; }
     .nav__btn_exit {
-      background-color: #b80093; }
+      background-color: #c1039b; }
 
 .filtr {
   margin-top: 25px;
@@ -261,5 +266,78 @@
 
 .noTask {
   display: none; }
+
+.profile {
+  min-height: 370px;
+  margin-top: 55px; }
+  .profile__title {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .profile__title-input {
+      margin-top: -6px;
+      float: right;
+      width: 100%;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #bdc3c7;
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.52);
+      height: 41px;
+      font-size: 16px;
+      outline: none;
+      max-width: 208px;
+      transition: 0.3s;
+      padding-left: 13px;
+      padding-right: 13px; }
+      .profile__title-input:hover, .profile__title-input:focus {
+        background-color: white;
+        box-shadow: 0px 2px 8.73px 0.27px rgba(40, 39, 38, 0.45); }
+  .profile__btn {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 212px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    clear: both;
+    float: right;
+    margin-top: 95px; }
+    .profile__btn:hover {
+      text-decoration: none;
+      color: #fff; }
+
+.addTask {
+  margin-top: 45px; }
+  .addTask__text {
+    float: left;
+    width: 35%; }
+  .addTask__inputTitle {
+    margin-bottom: 33px; }
+  .addTask__input {
+    display: block;
+    margin-bottom: 33px;
+    float: none;
+    width: 100%; }
+  .addTask__textaerea {
+    border-width: 0px;
+    width: 100%;
+    resize: none;
+    max-width: 100%;
+    float: none;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-height: 140px;
+    display: block; }
+  .addTask__form {
+    float: right;
+    width: 65%; }
 
 /*# sourceMappingURL=style.css.map */

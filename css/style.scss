@@ -13,6 +13,7 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    color: #fff;
     &:hover {
         text-decoration: none;
         color: #fff;
@@ -106,6 +107,10 @@
         display: block;
         background-color: #c32fa1;
         margin-top: 33px;
+        &_add{
+            margin-left: 0;
+            margin-top: 56px;
+        }
     }
 }
 
@@ -145,7 +150,7 @@
                 background-color: #276fa7;
             }
             &_exit {
-                background-color: #b80093;
+                background-color: #c1039b;
             }
         }
     }
@@ -257,7 +262,7 @@
         margin-top: 2px;
     }
     &__status {
-    	cursor: pointer;
+        cursor: pointer;
         display: inline-block;
         float: left;
         width: 24px;
@@ -306,6 +311,79 @@
         background-color: #262626;
     }
 }
-.noTask{
-	display: none;
+
+.noTask {
+    display: none;
+}
+
+.profile {
+	min-height: 370px;
+    margin-top: 55px;
+    &__title {
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &-input {
+            margin-top: -6px;
+            float: right;
+            width: 100%;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(189, 195, 199);
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.52);
+            height: 41px;
+            font-size: 16px;
+            outline: none;
+            max-width: 208px;
+            transition: 0.3s;
+            @include plr(13px, 13px);
+            &:hover,
+            &:focus {
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0px 2px 8.73px 0.27px rgba(40, 39, 38, 0.45);
+            }
+        }
+    }
+    &__btn{
+    	@include btn;
+    	clear: both;
+    	float: right;
+    	margin-top: 95px;
+    }
+}
+
+.addTask{
+    margin-top: 45px;
+ 
+    &__text{
+        float: left;
+        width: 35%;
+    }
+    &__inputTitle{
+         margin-bottom: 33px;
+    }
+    &__input{
+        display: block;
+        margin-bottom: 33px;
+        float: none;
+        width: 100%;
+    }    
+    &__textaerea{
+        border-width: 0px;
+        width: 100%;
+        resize: none;
+        max-width: 100%;
+        float: none;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+        max-height: 140px;
+        display: block;
+    }        
+    &__form{
+        float: right;
+        width: 65%;
+    }
 }

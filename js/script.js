@@ -3,14 +3,7 @@
 $(".filtr__item").click(function() {
 	$(".filtr__item").removeClass("filtr__item_active");
 	$(this).addClass("filtr__item_active");
-
-
-
-
-
-
 });
-
 
 
 $(".item_all").click(function() {
@@ -25,7 +18,6 @@ $(".item_done").click(function() {
 	$(".task_active").hide();
 	$(".task_done").fadeIn();
 });
-
 
 $(".task .task__status, .task .task__title, .task .task__btn_progress").click(function() {
 	if ($(this).parent().hasClass("task_active")) {
