@@ -36,7 +36,7 @@
     font-weight: 600;
     color: #262626;
     min-height: 100vh;
-    background: url(../img/main-bg.jpg) no-repeat center;
+    background: url(../../assets/img/main-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -110,6 +110,9 @@
         &_add{
             margin-left: 0;
             margin-top: 56px;
+            @media (max-width: 768px) {
+                margin-left: auto;
+            }
         }
     }
 }
@@ -159,7 +162,7 @@
 .filtr {
     margin-top: 25px;
     transition: 0.3s;
-    background-image: url(../img/filt__arrow.png);
+    background-image: url(../../assets/img/filt__arrow.png);
     cursor: pointer;
     display: inline-block;
     background-color: rgb(52, 73, 94);
@@ -193,7 +196,7 @@
         width: 50px;
         background-repeat: no-repeat;
         background-position: 15px center;
-        background-image: url(../img/filt__arrow.png);
+        background-image: url(../../assets/img/filt__arrow.png);
         transform: rotate(180deg);
         top: 0;
         right: 0;
@@ -249,6 +252,9 @@
         border-radius: 100%;
         background-color: #fff;
         margin-top: 1px;
+         @media (max-width: 768px) {
+            margin-top: 5px;
+         }
     }
     &_done .task__title {
         text-decoration: line-through;
@@ -260,6 +266,10 @@
         padding-left: 55px;
         cursor: pointer;
         margin-top: 2px;
+        @media (max-width: 768px) {
+            padding-left: 45px;
+            display: block;
+        }
     }
     &__status {
         cursor: pointer;
@@ -267,14 +277,14 @@
         float: left;
         width: 24px;
         height: 24px;
-        background-image: url(../img/task_icons.png);
+        background-image: url(../../assets/img/task_icons.png);
         background-repeat: no-repeat;
         &_active {
             background-position: 0;
         }
     }
     &__btn {
-        background-image: url(../img/task_icons.png);
+        background-image: url(../../assets/img/task_icons.png);
         background-repeat: no-repeat;
         display: inline-block;
         float: right;
@@ -283,7 +293,10 @@
         margin-right: 20px;
         cursor: pointer;
         transition: 0.3s;
-
+        @media (max-width: 768px) {
+            margin-top: 5px;
+        }
+                
         &:hover {
             transform: scale(1.1);
         }
@@ -317,13 +330,23 @@
 }
 
 .profile {
-	min-height: 370px;
+    min-height: 370px;
     margin-top: 55px;
+    max-width: 336px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 768px) {
+        max-width: 290px;
+    }
     &__title {
         width: 100%;
         float: left;
         margin-top: 20px;
         margin-bottom: 20px;
+        @media (max-width: 768px) {
+            float: none;
+
+        }
         &-input {
             margin-top: -6px;
             float: right;
@@ -338,6 +361,11 @@
             outline: none;
             max-width: 208px;
             transition: 0.3s;
+            @media (max-width: 768px) {
+                    margin-top: 10px;
+                    float: none;
+                    max-width: 290px;
+            }
             @include plr(13px, 13px);
             &:hover,
             &:focus {
@@ -347,26 +375,21 @@
         }
     }
     &__btn{
-    	@include btn;
-    	clear: both;
-    	float: right;
-    	margin-top: 95px;
+        @include btn;
+        clear: both;
+        float: right;
+        margin-top: 95px;
+        @media (max-width: 768px) {
+            @include mauto;
+            float: none;
+        }
     }
 }
 
 .addTask{
     margin-top: 45px;
- 
-    &__text{
-        float: left;
-        width: 35%;
-    }
-    &__inputTitle{
-         margin-bottom: 33px;
-    }
     &__input{
         display: block;
-        margin-bottom: 33px;
         float: none;
         width: 100%;
     }    
@@ -381,9 +404,8 @@
         margin-bottom: 20px;
         max-height: 140px;
         display: block;
-    }        
-    &__form{
-        float: right;
-        width: 65%;
+    }
+    &__form-row_margin{
+        margin-bottom: 33px;
     }
 }
